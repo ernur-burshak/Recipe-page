@@ -250,14 +250,13 @@ ol {
   display: none;
 }
 
-/* Адаптация для планшетов */
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: 100%;
     max-width: 616px;
   }
 }
-/* Адаптация для мобильных устройств */
+
 @media (max-width: 767px) {
   .container {
     width: 100%;
