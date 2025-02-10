@@ -34,6 +34,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .image {
@@ -53,6 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  box-sizing: border-box;
 }
 
 .simple-omlette-title {
@@ -188,6 +191,7 @@ ol {
   flex-direction: column;
   gap: 8px;
   padding-inline-start: 28px;
+  box-sizing: border-box;
 }
 
 .nutrition {
@@ -236,8 +240,53 @@ ol {
   font-size: 16px;
 }
 
+.brown {
+  color: #854632;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   display: none;
+}
+
+/* Адаптация для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 616px;
+  }
+}
+/* Адаптация для мобильных устройств */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0;
+  }
+
+  .simple-omlette {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 375px;
+    height: 171px;
+    border-radius: 0;
+  }
+
+  .description {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }
